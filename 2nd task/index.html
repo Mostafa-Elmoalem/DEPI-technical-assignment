@@ -1,0 +1,86 @@
+<!-- Task 2 : Create Form 
+Description:
+
+Please create a service request form using HTML. The form should include fields to capture the following information: your name, email address, the type of service you're requesting (using a dropdown menu with at least three options), your budget (as a number input), project deadline (as a date input), and any additional notes (as a textarea). The form should have a submit button to send the information.
+
+Ensure the form follows accessibility standards, with proper labels, alt text (if applicable), and correct tab order. Use semantic HTML elements such as section, fieldset, legend, and labels to enhance the structure of the form. Additionally, include clear and SEO-friendly headings to describe the purpose of the form, like 'Request a Service' or 'Service Inquiry'. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Service Request Form to capture user information for service inquiries.">
+    <meta name="keywords" content="Service Request, Form, Inquiry, Budget, Deadline">
+    <meta name="author" content="Mostafa">
+    
+    <title>Document</title>
+</head>
+<body>
+    
+    <main>
+        <!-- Start request form -->
+
+        <section id="service-inquiry">
+            <h1>Request a Service</h1>
+
+            <form action="#" method="post">
+                <fieldset>
+                    <legend> Service Request Form</legend>
+<!-- Name Input -->
+                    <div>
+                        <label for="name">Your Name:</label><br>
+                        <input type="text" id="name" name="name" placeholder="John Doe" required>
+                    </div>
+                    <br>
+<!-- Email Input -->
+                    <div>
+                        <label for="email">Email Address:</label><br>
+                        <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                    </div>
+                    <br>
+<!-- Service Type Dropdown -->
+                    <div>
+                        <label for="service-type">Type of Service:</label><br>
+                        <select id="service-type" name="service-type" required>
+                            <option value="" disabled selected>-- Select a service --</option>
+                            <option value="consulting">Consulting</option>
+                            <option value="development">Web Development</option>
+                            <option value="design">UI/UX Design</option>
+                            <option value="marketing">Digital Marketing</option>
+                        </select>
+                    </div>
+                    <br>
+<!-- Budget Input -->
+                    <div>
+                        <label for="budget">Budget $:</label><br>
+                        <input type="number" id="budget" name="budget" min="0" step="50" placeholder="e.g. 500"
+                            required>
+                    </div>
+                    <br>
+<!-- Project Deadline Input -->
+                    <div>
+                        <label for="deadline">Project Deadline:</label><br>
+                        <input type="date" id="deadline" name="deadline" required>
+                    </div>
+                    <br>
+<!-- notes -->
+                    <div>
+                        <label for="notes">Additional Notes:</label><br>
+                        <textarea id="notes" name="notes" rows="5" cols="40"
+                            placeholder="Describe your project here..."></textarea>
+                    </div>
+                    <br>
+
+                    <button type="submit"> Submit Request</button>
+
+                </fieldset>
+            </form>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
