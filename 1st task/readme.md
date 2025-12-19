@@ -11,7 +11,7 @@ The goal of this project was **not** to build a visually styled website (no CSS 
 - **SEO Optimization:** Implementing correct meta tags, canonicals, and heading structures (`h1`-`h6`).
 
 ## 🚀 Live Demo
-[View Live Project]()
+[View Live Project](https://mostafa-elmoalem.netlify.app/)
 
 ## 🛠️ Tech Stack
 * **HTML5** (Semantic Tags, Forms, Media Elements)
