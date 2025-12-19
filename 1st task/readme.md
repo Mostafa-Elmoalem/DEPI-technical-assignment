@@ -12,18 +12,3 @@ The goal of this project was **not** to build a visually styled website (no CSS 
 
 ## 🚀 Live Demo
 [View Live Project](https://mostafa-elmoalem.netlify.app/)
-
-## 🛠️ Tech Stack
-* **HTML5** (Semantic Tags, Forms, Media Elements)
-* **No CSS** (Structure focus only)
-* **No JavaScript**
-
-## 📂 Project Structure
-```text
-├── index.html        # Main entry point (The entire app)
-├── logo.png          # Personal Logo
-├── public/           # Project screenshots & assets
-│   ├── impulse.png
-│   ├── surgyTrack.png
-│   └── ...
-└── README.md         # Documentation
