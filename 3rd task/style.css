@@ -703,6 +703,8 @@ nav {
 .contact-section {
     padding: 48px 0;
     background-color: var(--bg-light);
+    z-index: 0;
+    position: relative;
 }
 
 .contact-wrapper {
@@ -771,34 +773,34 @@ nav {
 
 /* ============ الجزء الأيمن (Form Card) ============ */
 .contact-form-card {
-    flex: 1;
+    display: flex;
+    flex:1;
+    gap: 50px;
     background-color: white;
     padding: 50px;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.05);
     position: relative;
-    max-width: 500px;
+    max-width: 550px;
 }
 
 .contact-form-card::before {
     content: '';
     position: absolute;
     z-index: -1;
-    bottom: -3%;
-    left: -3%;
+    bottom: -2%;
+    left: -2%;
     width: 150px;
     height: 150px;
-    background: var(--primary-blue);
+    background: linear-gradient( 135deg, var(--primary-blue), var(--dark-blue));
 }
-
 .contact-form-card h2 {
     font-size: 28px;
     color: var(--primary-blue);
     margin-bottom: 40px;
 }
 
-/* تنسيق حقول الإدخال (خطوط فقط) */
 .form-group {
-    margin-bottom: 30px;
+    margin-bottom: 24px;
 }
 
 .form-group label {
@@ -810,32 +812,32 @@ nav {
 
 .contact-form-card input,
 .contact-form-card textarea {
-    width: 100%;
+    width: 130%;
     border: none;
     border-bottom: 1px solid #ddd;
-    /* الخط الرمادي الخفيف */
     padding: 10px 0;
     font-size: 16px;
     color: var(--text-dark);
     outline: none;
     resize: none;
-    /* لمنع تكبير الـ textarea */
     transition: 0.3s;
 }
 
-/* تغيير لون الخط عند الكتابة */
 .contact-form-card input:focus,
 .contact-form-card textarea:focus {
     border-bottom-color: var(--primary-blue);
 }
 
 .contact-form-card button {
-    margin-top: 10px;
+    margin-top: 18px;
     width: 100%;
-    /* الزرار ياخد العرض كامل زي التصميم */
-    padding: 15px;
+    padding: 12px;
     font-weight: 600;
+    border-radius: 0%;
 }
+
+
+
 /* ============ FOOTER ============ */
 footer {
     padding: 30px 0;
